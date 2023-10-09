@@ -1,7 +1,3 @@
-# stable build v1.0
-# Rexon softwares 
-# MIT Licenced
-
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
