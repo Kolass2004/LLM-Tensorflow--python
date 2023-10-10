@@ -31,7 +31,7 @@ y = input_sequences[:, -1]
 
 # Convert labels to one-hot encoding
 y = tf.keras.utils.to_categorical(y, num_classes=total_words)
-
+x= tf.keras.utils.to_categorical(x, num_classes=total_words)
 # Build an LSTM-based language model
 model = Sequential()
 model.add(Embedding(total_words, 100, input_length=max_sequence_length-1))
